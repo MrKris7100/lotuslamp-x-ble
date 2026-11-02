@@ -1,0 +1,38 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "lotuslamp-x-ble"
+version = "1.0.0"
+description = "BLE controller library for Lotuslamp X Panel"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-only"
+license-files = ["LICENSE"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Framework :: AsyncIO",
+	"Intended Audience :: Developers",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Operating System :: OS Independent",
+	"Programming Language :: Python :: 3",
+	"Programming Language :: Python :: 3 :: Only",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+	"Programming Language :: Python :: 3.14",
+]
+dependencies = ["bleak>=0.21,<4"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lotuslamp_x_ble"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+	"src/lotuslamp_x_ble",
+	"README.md",
+	"LICENSE",
+	"pyproject.toml",
+]

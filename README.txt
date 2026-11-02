@@ -1,1 +1,0 @@
-Connect your LotusLamp X LED strips to Homey. These LED strip controllers are sold under many different brands. Note that these Bluetooth LED strips are stateless, there's no way to get the state from the LED strip. This means that state changes triggered by the LotusLamp X phone app or the remote don't get reflected in Homey.
